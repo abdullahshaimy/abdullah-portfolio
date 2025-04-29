@@ -1,5 +1,56 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
+@font-face {
+    font-family: montserat;
+    src: url(Fonts/Montserrat-Medium.ttf);
+}
+
+@font-face {
+    font-family: sans;
+    src: url(Fonts/GeneralSans-Medium.otf);
+}
+
+@font-face {
+    font-family: ranade;
+    src: url(Fonts/Ranade-Medium.otf);
+}
+
+@font-face {
+    font-family: Vengeance;
+    src: url(Fonts/VengeanceRegular-E27W.otf);
+}
+
+@font-face {
+    font-family: Brownede;
+    src: url(Fonts/BrownedeCalvin-Regular.otf);
+}
+
+@font-face {
+    font-family: playfair;
+    src: url(Fonts/playfair-display.bold.ttf);
+}
+
+@font-face {
+    font-family: inter;
+    src: url(Fonts/InterBureauBold-ZDKl.otf);
+}
+
+p {
+    font-family: ranade;
+}
+
+.header .logo {
+    font-family: playfair;
+}
+
+.header .navbar a {
+    font-family: Vengeance;
+}
+
+.home .home-content h3 {
+    font-family: ;
+}
+
 *{
    margin: 0;
    padding: 0;
