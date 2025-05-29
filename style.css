@@ -35,12 +35,21 @@
     src: url(Fonts/InterBureauBold-ZDKl.otf);
 }
 
+@font-face {
+    font-family: orliet;
+    src: url(Fonts/Orliet\ Pro\ Script.otf);
+}
+
+#home .home-content h1 {
+    font-size: 43px;
+}
+
 p {
     font-family: ranade;
 }
 
 .header .logo {
-    font-family: playfair;
+    font-family: orliet;
 }
 
 .header .navbar a {
@@ -134,7 +143,7 @@ section {
     display: flex;
     align-items: center;
     padding: 0 9%;
-    background: url('home.jpg') no-repeat;
+    background: url('home\ \ 2.jpg') no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -225,6 +234,7 @@ section {
     overflow: hidden;
     transition: .5s;
 }
+
 
 .btn-box .btn:hover {
     color: var(--main-color);
