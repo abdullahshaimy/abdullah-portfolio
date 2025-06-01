@@ -772,15 +772,15 @@ span {
 .navbar .animate,
 #menu-icon .animate,
 .home.show-animate .animate {
-    animation: showRight 0.6s ease forwards;
+    animation: showRight 0.5s ease forwards;
     animation-delay: calc(.2s * var(--i));
 }
 
 .animate.scroll {
-    transition: 0.6s ease;
+    transition: 0.5s ease;
     transition-delay: calc(.2s / var(--i));
     animation: none;
-}
+} 
 
 section:nth-child(odd) .animate.scroll,
 .footer .animate.scroll {
@@ -796,9 +796,9 @@ section:nth-child(odd) .animate.scroll,
 .skills.show-animate .animate.scroll,
 .contact.show-animate .animate.scroll,
 .footer.show-animate .animate.scroll {
-    transition-delay: calc(.3s * var(--i));
-    width: 0;
-}
+    transition-delay: calc(.2s * var(--i));
+    width: 0; 
+} 
 
 /* BREAKPOINTS */
 @media (max-width: 1200px) {
