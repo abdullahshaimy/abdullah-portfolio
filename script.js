@@ -20,10 +20,10 @@ window.onscroll = () => {
 
         if(top >= offset && top < offset + height) {
             // active navbar links
-            navlinks.forEach(links => {
-                links.classList.remove('active');
-                document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
-            });
+            navlinks.forEach(links => links.classList.remove('active'));
+            let currentLink = document.querySelector(`header nav a[href*="${id}"]`);
+            if (currentLink) currentLink.classList.add('active');
+
             // active sections for animation on scroll
             sec.classList.add('show-animate');
         }
@@ -45,7 +45,7 @@ window.onscroll = () => {
     // animatio footer on scroll
     let footer = document.querySelector('footer');
 
-    footer.classList.toggle('show-animate', this.innerHeight + this.scrollY >= document.scrollingElement.scrollHeight);
+    footer.classList.toggle('show-animate', window.innerHeight + window.scrollY >= document.documentElement.scrollHeight);
 }
 // contact page 
 function emailSend(){

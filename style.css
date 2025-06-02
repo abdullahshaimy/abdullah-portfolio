@@ -776,7 +776,7 @@ span {
     animation-delay: calc(.2s * var(--i));
 } 
 
-.animate.scroll {
+ .animate.scroll {
     transition: 0.5s ease;
     transition-delay: calc(.2s / var(--i));
     animation: none;
@@ -791,7 +791,7 @@ section:nth-child(odd) .animate.scroll,
     width: 105%;
 }
 
-.about.show-animate .animate.scroll,
+ .about.show-animate .animate.scroll,
 .education.show-animate .animate.scroll,
 .skills.show-animate .animate.scroll,
 .contact.show-animate .animate.scroll,
@@ -799,6 +799,7 @@ section:nth-child(odd) .animate.scroll,
     transition-delay: calc(.2s * var(--i));
     width: 0; 
 } 
+
 
 /* BREAKPOINTS */
 @media (max-width: 1200px) {
