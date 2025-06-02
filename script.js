@@ -47,18 +47,3 @@ window.onscroll = () => {
 
     footer.classList.toggle('show-animate', window.innerHeight + window.scrollY >= document.documentElement.scrollHeight);
 }
-// contact page 
-function emailSend(){
-    
-    Email.send({
-        Host : "s1.maildns.net",
-        Username : "abdullahshaimyofficial@gmail.com",
-        Password : "5A16B91C5E8BDC0F5D058D4BE956B0B5E61C",
-        To : 'abdullahshaimyofficial@gmail.com',
-        From : "abdullahshaimyofficial@gmail.com",
-        Subject : "This is the subject",
-        Body : "And this is the body"
-    }).then(
-      message => alert(message)
-    );
-     }
