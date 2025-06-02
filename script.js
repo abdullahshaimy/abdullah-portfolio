@@ -47,3 +47,26 @@ window.onscroll = () => {
 
     footer.classList.toggle('show-animate', window.innerHeight + window.scrollY >= document.documentElement.scrollHeight);
 }
+
+document.querySelector("form").addEventListener("submit", function (e) {
+    // Get form field values
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const phone = document.getElementById("phone").value.trim();
+    const subject = document.getElementById("subject").value.trim();
+    const message = document.getElementById("message").value.trim();
+
+    // Email and phone format patterns
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    // Check for empty fields
+    if (!name || !email || !phone || !subject || !message) {
+      alert("Please fill in all the fields.");
+      e.preventDefault(); // Stop form submission
+    } 
+    // Validate email
+    else if (!emailPattern.test(email)) {
+      alert("Please enter a valid email address.");
+      e.preventDefault();
+    } 
+  });
