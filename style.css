@@ -40,10 +40,6 @@
     src: url(Fonts/Orliet\ Pro\ Script.otf);
 }
 
-#home .home-content h1 {
-    font-size: 43px;
-}
-
 p {
     font-family: ranade;
 }
@@ -156,7 +152,7 @@ section {
 .home-content h1{
     position: relative;
     display: inline-block;
-    font-size: 5.6rem;
+    font-size: 4.9rem;
     font-weight: 700;
     line-height: 1.3;
 }
